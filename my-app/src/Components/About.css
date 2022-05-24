@@ -1,0 +1,28 @@
+.aboutContainer {
+    /* border: 1px solid #9448BC */
+    color: #40F99B;
+    text-align: center;
+}
+
+h1 {
+    font-size: 56px;
+    margin: .25em;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+
+}
+
+p {
+    font-size: 24px;
+    color: #420264;
+    color: #5C038C;
+    color: #1B1734;
+    color: #af88ff;
+    color: #daf
+}
