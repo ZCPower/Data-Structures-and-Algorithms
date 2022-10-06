@@ -9,9 +9,9 @@
     - O(n^2 + 5n +8) can be reduced to O(n^2).
 
 ### Constants can be removed.
-    -O(500n) can be reduced to O(n);
-    O(3) can be reduced to O(1).
-    O(10n^2) can be reduced to O(n^2).
+    - O(500n) can be reduced to O(n);
+    - O(3) can be reduced to O(1).
+    - O(10n^2) can be reduced to O(n^2).
 
 ### Big O Shorthands
     - Arithmetic operations are constant.
@@ -28,11 +28,25 @@
     - A logarithm is the inverse of exponents.
     - log2(8) = 3 --> 2^3 = 8
     - log2(32) = 5 --> 2^5 = 32.
-
     - log 2 (value) = exponent / 2^exponent = value.
     - O(log n) is great complexity!
 
 
 
 ## Analyizing Performance of Arrays and Objects
+
+### Big O of Objects
+    - Insertion = O(1)
+    - Removal = O(1)
+    - Searching = O(N)
+    - Accesss = O(1)
+
+    Objects are great when we don't need any ordering. 
+
+### Big O of Object Methods
+    - Object.keys = O(n)
+    - Object.values = O(n)
+    - Object.entries = O(n)
+    - hasOwnProperty = O(1)
+
 
