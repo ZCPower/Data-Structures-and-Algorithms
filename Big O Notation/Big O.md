@@ -49,4 +49,30 @@
     - Object.entries = O(n)
     - hasOwnProperty = O(1)
 
+### Big O of Arrays
+    - Insertion = It depends.
+        - Adding to end is O(1).
+        - Adding to beginning is O(n)
+    - Removal = It depends.
+        - Removing from end is O(1)
+        - Removing from beginning is O(n)
+    - Searching = O(n)
+    - Accesssing = O(1)
+
+### Big O of Array Methods
+    - push/pop = O(1)
+        -adding/removing to end of array
+    - shift/unshift = O(N)
+        -adding/removing to beginning of array
+    - concat = O(N)
+        - merging two arrays (technically would be O(m+n))
+    - slice / splice = O(N)
+        - returns new array, so it is proportional to the amount of elements we were trying to copy
+    - sort = O(N * log N)
+        - See sorting algorithm section. 
+    - forEach/map/filter/reduce/etc = O(N)
+        - looping through each element in an array
+ 
+
+
 
