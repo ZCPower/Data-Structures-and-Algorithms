@@ -1,4 +1,4 @@
-Why does Big O matter? 
+### Why does Big O matter? 
 
 Time Complexity
 
