@@ -26,7 +26,12 @@ Time Complexity
     - A logarithm is the inverse of exponents.
     - log2(8) = 3 --> 2^3 = 8
     - log2(32) = 5 --> 2^5 = 32.
+<<<<<<< HEAD
     - log 2 (value) = exponent / 2^exponent = value.
     - O(log n) is great complexity!
 
 ### Analyizing Performance of Arrays and Objects
+=======
+    log 2 (value) = exponent / 2^exponent = value.
+    O(log n) is great complexity!
+>>>>>>> 5492ad71a7add2ad87d6c87c5f6d806d201bf836
