@@ -1,6 +1,8 @@
-### Why does Big O matter? 
+# Big O Notation
 
-Time Complexity
+## Why does Big O matter? 
+
+## Time Complexity
 
 ### Smaller terms don't matter. 
     - O(n + 10) can be reduced to O(n).
@@ -17,7 +19,7 @@ Time Complexity
     - Accessing elements in an array or object is constant. 
     - In a loop, the complexity if the length of the loop times whatever happens within the loop.
 
-### Space Complexity 
+## Space Complexity 
     - Most primitive data dtypes are constant space.
     - Strings require O(n) space. (n being string length)
     - Reference types (arrays and Objects) are generally O(n) where n is the length or the number of keys. 
@@ -27,6 +29,7 @@ Time Complexity
     - log2(8) = 3 --> 2^3 = 8
     - log2(32) = 5 --> 2^5 = 32.
 <<<<<<< HEAD
+<<<<<<< HEAD
     - log 2 (value) = exponent / 2^exponent = value.
     - O(log n) is great complexity!
 
@@ -35,3 +38,9 @@ Time Complexity
     log 2 (value) = exponent / 2^exponent = value.
     O(log n) is great complexity!
 >>>>>>> 5492ad71a7add2ad87d6c87c5f6d806d201bf836
+=======
+    - log 2 (value) = exponent / 2^exponent = value.
+    - O(log n) is great complexity!
+
+## Analyizing Performance of Arrays and Objects
+>>>>>>> e3634a917e658f46e0671a85aefb3406f43bc191
