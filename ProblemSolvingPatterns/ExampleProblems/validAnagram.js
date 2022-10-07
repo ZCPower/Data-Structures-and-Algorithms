@@ -74,4 +74,30 @@ function validAnagram2(str1, str2) {
 validAnagram2('anagramd', 'danagmar')
 
 //Time complexity should reduce to O(n).
-    //We have 3 different loops. so O(3n) reduces to O(n).
+//We have 3 different loops. so O(3n) reduces to O(n).
+
+
+
+// Colt's solution: 
+
+function validAnagram3(first, second) {
+    if (first.length !== second.length) return false;
+
+    const lookup = {};
+
+    for (let i = 0; i < first.length; i++) {
+        let letter = first[i];
+        lookup[letter] ? lookup[letter]++ : lookup[letter] = 1
+    }
+
+    for (let j = 0; j < second.length; j++) {
+        let letter = second[j];
+        if (!lookup[letter]) return false
+        else lookup[letter]--
+    }
+    return true
+}
+
+validAnagram3('pizfa', 'pizza')
+
+//this is still O(n), but only has two loops instead of 3. Saves on space and time complexity and code brevity.
