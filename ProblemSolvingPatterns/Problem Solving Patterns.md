@@ -37,7 +37,10 @@
         - Move these pointers towards the beginning, end, or middle of the array based on a provided condition.
         -Can start on the same end, seperate ends or in the middle going opposite directions. 
 ###  Sliding Window
-### Divide and Conquer
+        - This pattern involves creating a window which can either be an array or number from one position to another.
+        - Depending on a certain condition, the window either increases or closes (and a new window is created)
+        -Very useful for keeping track of a subset of data in an array/string etc.
+###  Divide and Conquer
 ###  Dynammic Programming
 ###  Greedy Algorithms
 ###  Backtracking
