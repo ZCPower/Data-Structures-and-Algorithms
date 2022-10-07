@@ -32,8 +32,10 @@
         - Use an object to collect a bunch of values(as keys) and their frequencies( as values)
         - This helps avoid the need for nested loops. Which would be a O(n^2) operation with strings/arrays.
         - Two seperate loops vastly better than a nested loop. O(2n) vs. O(n^2).
-        
 ###  Multiple Pointers
+        - Create two values or references that each correspond to a different index in an array.
+        - Move these pointers towards the beginning, end, or middle of the array based on a provided condition.
+        -Can start on the same end, seperate ends or in the middle going opposite directions. 
 ###  Sliding Window
 ### Divide and Conquer
 ###  Dynammic Programming
