@@ -16,10 +16,12 @@
     - Start at array, and loop through it and at each iteration check if array[i] is equal to what we're searching for.
     - If it is return that index.
     - If it is never found, return -1.
-    
+
 `
-    for (let i = 0; i < array.length; i ++){
-        if (array[i] === searchTerm) return i
-    } 
-    return -1
+  function linearSearch(array, item){
+ for (let i = 0; i < array.length; i++) {
+     if (array[i] === item) return i
+ }
+ return -1
+}
     `
