@@ -17,11 +17,11 @@
     - If it is return that index.
     - If it is never found, return -1.
 
-`
+-
   function linearSearch(array, item){
  for (let i = 0; i < array.length; i++) {
      if (array[i] === item) return i
  }
  return -1
 }
-    `
+-
