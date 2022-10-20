@@ -13,7 +13,7 @@ function Nav() {
                 </Link>
             </div>
             <ul id='navLinks'>
-                //I would like to add logos for each button.
+                {/* //I would like to add logos for each button.*/}
                 <li><Link to='/teams'>Teams</Link></li>
                 <li><Link to='/seasons'>Seasons</Link></li>
                 <li><Link to='/players'>Players</Link></li>
