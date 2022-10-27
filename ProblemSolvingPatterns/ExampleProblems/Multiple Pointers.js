@@ -16,3 +16,5 @@ function sumZero(arr) {
 }
 
 // GO THROUGH EACH STEP.
+
+//THREE NUMBER SUM WOULD BE GOOD EXAMPLE.
