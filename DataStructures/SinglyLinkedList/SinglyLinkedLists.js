@@ -1,6 +1,3 @@
-// piece of data - val
-//reference to next node - next
-
 class Node {
     constructor(val) {
         this.val = val
@@ -63,6 +60,24 @@ class SinglyLinkedList {
             return this;
         }
     }
+    get(index) {
+        if (index < 0 || index >= this.length) return null;
+        let current = this.head;
+        let count = 0;
+        while (count < index) {
+            current = current.next;
+            count++;
+        }
+        return current
+    }
+    set(index, val) {
+        let found = this.get(index);
+        if (found) {
+            found.val = val;
+            return true
+        }
+        return false;
+    }
 }
 
 
@@ -76,4 +91,6 @@ let listy = new SinglyLinkedList();
 listy.push('hey')
 listy.push('your mom called')
 listy.push('and she said she loved you.')
+listy.push('this is the fourth node');
+listy.push('$')
 console.log(listy)
