@@ -56,9 +56,10 @@ class SinglyLinkedList {
         } else {
             newHead.next = this.head;
             this.head = newHead;
-            this.length++;
-            return this;
+
         }
+        this.length++;
+        return this;
     }
     get(index) {
         if (index < 0 || index >= this.length) return null;
@@ -78,6 +79,55 @@ class SinglyLinkedList {
         }
         return false;
     }
+    insert(index, val) {
+        if (index < 0 || index > this.length) return null;
+        if (index === index.length) {
+            this.push(val)
+            return true;
+        }
+        if (index === 0) {
+            this.unshift(val)
+            return true
+        }
+
+        let newNode = new Node(val)
+        let prev = this.get(index - 1);
+        let temp = prev.next;
+        prev.next = newNode;
+        newNode.next = temp;
+        this.length++;
+        return true;
+    }
+    remove(index) {
+        if (index < 0 || index >= this.length) return undefined;
+        if (index === this.length - 1) {
+            this.pop()
+            return true
+        }
+        if (index === 0) {
+            this.shift();
+            return true;
+        }
+        let temp = this.get(index - 1);
+        let removed = temp.next;
+        temp.next = removed.next;
+        this.length--;
+        return removed
+    }
+    reverse() {
+        let node = this.head;
+        this.head = this.tail;
+        this.tail = node;
+        let next;
+        let prev = null;
+        for (let i = 0; i < this.length; i++) {
+            next = node.next;
+            node.next = prev;
+            prev = node;
+            node = next;
+        }
+        return this
+    }
 }
 
 
@@ -87,10 +137,10 @@ first.next = new Node('there')
 first.next.next = new Node('How')
 first.next.next.next = new Node('are you?')
 
-let listy = new SinglyLinkedList();
-listy.push('hey')
-listy.push('your mom called')
-listy.push('and she said she loved you.')
-listy.push('this is the fourth node');
-listy.push('$')
-console.log(listy)
+let list = new SinglyLinkedList();
+list.push('hey')
+list.push('your mom called')
+list.push('and she said she loved you.')
+list.push('this is the fourth node');
+list.push('$')
+console.log(list)
